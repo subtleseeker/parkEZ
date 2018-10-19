@@ -75,7 +75,7 @@ export default class Home extends Component {
 		const email = navigation.getParam('email', '');
 
 		return (
-			//Alert.alert(name+":"+email),
+			Alert.alert(name+":"+email),
 			<View style={{flex:1}}>
 				<View style={styles.topContainer}>
 					<View style={[styles.buttonContainer, {width: '50%'}]}>

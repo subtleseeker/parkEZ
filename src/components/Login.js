@@ -68,12 +68,13 @@ export default class Login extends Component<Props> {
                     secureTextEntry={true}		
 				/>
 
-                {/* <View style={styles.buttonContainer}>
+                <View style={styles.buttonContainer}>
 					<Button
 						onPress={() => this.onSignin({name: '<get from db>', email: this.state.email})}
 						title="Sign In"
 					/>
-				</View> */}
+				</View>
+
                 <TouchableHighlight 
 				style={{marginTop: 15, padding: 3}}
 				underlayColor='#F0F0F0'
