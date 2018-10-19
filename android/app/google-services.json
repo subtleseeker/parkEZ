@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "948357526486",
+    "firebase_url": "https://parkez-81bcf.firebaseio.com",
+    "project_id": "parkez-81bcf",
+    "storage_bucket": "parkez-81bcf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948357526486:android:505a014e1f8c2e44",
+        "android_client_info": {
+          "package_name": "com.parkEZ"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948357526486-j43vktpen65vajusrq7au2u9q1hvisjp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.parkEZ",
+            "certificate_hash": "1b22407f396c575f6689baacb8e2beeca1608342"
+          }
+        },
+        {
+          "client_id": "948357526486-969p3ruaedh8h7ch1ftvebtacr2h05pv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDckbOAKnnE2yIFaKBcQgeIdc_uTCRlwSg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948357526486-969p3ruaedh8h7ch1ftvebtacr2h05pv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
