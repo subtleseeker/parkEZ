@@ -1,11 +1,6 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react'
 import {View, Text, Alert, Button, TextInput, Image, TouchableHighlight, Platform, StyleSheet} from 'react-native';
-import {createStackNavigator} from 'react-navigation';
-//import GoogleLogin from '../../GoogleLoginButton';
-import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
-// import { TextField } from 'react-native-material-textfield';
 import { MKTextField, MKColor, mdl } from 'react-native-material-kit';
-
 
 const TextfieldWithFloatingLabel = MKTextField.textfieldWithFloatingLabel()
   .withPlaceholder('Number...')
@@ -23,23 +18,8 @@ const TextfieldWithFloatingLabel = MKTextField.textfieldWithFloatingLabel()
 //   .withKeyboardType('numeric')
 .build();
 
-// const FloatingTextField = (props) => <MKTextField.textfieldWithFloatingLabel()
-//   //tintColor={MKColor.Lime}
-//   //textInputStyle={{color: MKColor.Orange}}
-//   placeholder="Text…"
-//   style={styles.textfieldWithFloatingLabel}
-// />
-
-// const CustButton = (props) => <Button 
-// 							titleStyle={styles.buttonTitle} 
-// 							buttonStyle={styles.buttonStyle} 
-// 							{...props} />;
-
-
-
-export default class App extends Component<Props> {
-
-	constructor(props){
+export default class Login extends Component<Props> {
+    constructor(props){
 		super(props);
 		this.state = {
 			email: '',
@@ -50,9 +30,9 @@ export default class App extends Component<Props> {
 			name: "",
 			photoUrl: "",
 		}
-	};
-
-	onRegister = () => {
+    };
+    
+    onRegister = () => {
 		this.props.navigation.navigate('Register');
 	}
 
@@ -60,24 +40,17 @@ export default class App extends Component<Props> {
 		this.props.navigation.navigate('Home', x);
 	}
 
-	render() {
-		return (
-		<View style={styles.loginContainer}>
-			<View style={styles.login}>
-				<Image
-					resizeMode='contain'
-					// style={styles.logo}
-					source={require('../images/logo_park.png')}	
-				/>
-				{/* <TextField
-				label= "Email Id"
-				value= {this.email}
-				onChangeText={textInputValue => this.setState({email: textInputValue})}
-				// style={{width:100%}}
-				//style={[styles.textInput, {marginTop: 40}]}
-				/> */}
+    render() {
+        return (
+        <View style={styles.loginContainer}>
+            <View style={styles.login}>
+                <Image
+                        resizeMode='contain'
+                        // style={styles.logo}
+                        source={require('../images/logo_park.png')}	
+                />
 
-				<TextfieldWithFloatingLabel
+                <TextfieldWithFloatingLabel
 					//tintColor={MKColor.Lime}
 					//textInputStyle={{color: MKColor.Orange}}
 					onChangeText={textInputValue => this.setState({email: textInputValue})}
@@ -86,36 +59,28 @@ export default class App extends Component<Props> {
 				/>
 
 				<TextfieldWithFloatingLabel 
-				placeholder= "Password"
-				onChangeText={textInputValue => this.setState({password: textInputValue})}
-				// style={[styles.textInput, {marginTop:10}]}	
-				// style={{marginTop: 10}}
-				secureTextEntry={true}		
+                    placeholder= "Password"
+                    onChangeText={textInputValue => this.setState({password: textInputValue})}
+                    // style={[styles.textInput, {marginTop:10}]}	
+                    // style={{marginTop: 10}}
+                    secureTextEntry={true}		
 				/>
 
-				{/* <TextInput 
-				placeholder= "Password"
-				onChangeText={textInputValue => this.setState({password: textInputValue})}
-				style={[styles.textInput, {marginTop:10}]}	
-				secureTextEntry={true}		
-				/> */}
-				<View style={styles.buttonContainer}>
+                {/* <View style={styles.buttonContainer}>
 					<Button
 						onPress={() => this.onSignin({name: '<get from db>', email: this.state.email})}
 						title="Sign In"
 					/>
-				</View>
-
-
-				<TouchableHighlight 
+				</View> */}
+                <TouchableHighlight 
 				style={{marginTop: 15, padding: 3}}
 				underlayColor='#F0F0F0'
 				onPress={this.onRegister}>
 					<Text style={{ color: 'darkblue'}}>REGISTER</Text>
 				</TouchableHighlight>
 
-				{/* <View style={styles.googleSignIn}>
-					<GoogleLogin 
+				<View style={styles.googleSignIn}>
+					{/* <GoogleLogin 
 						onLogin={
 							(result) => {
 								console.log('Google onLogin')
@@ -138,8 +103,8 @@ export default class App extends Component<Props> {
 								}
 							}
 						}
-					/>
-				</View> */}
+					/> */}
+				</View>
 
 			</View>
 		</View>
