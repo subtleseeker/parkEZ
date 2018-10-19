@@ -8,17 +8,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:948357526486:android:505a014e1f8c2e44",
+        "mobilesdk_app_id": "1:948357526486:android:269193fb5ec5c8c7",
         "android_client_info": {
-          "package_name": "com.parkEZ"
+          "package_name": "com.parkez"
         }
       },
       "oauth_client": [
         {
-          "client_id": "948357526486-j43vktpen65vajusrq7au2u9q1hvisjp.apps.googleusercontent.com",
+          "client_id": "948357526486-ehevum513k68r7vmqqiudmv8c46atoau.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.parkEZ",
+            "package_name": "com.parkez",
             "certificate_hash": "1b22407f396c575f6689baacb8e2beeca1608342"
           }
         },

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import {View, Text, Alert, Button, TextInput, Image, TouchableHighlight, Platform, StyleSheet} from 'react-native';
 import { MKTextField, MKColor, mdl } from 'react-native-material-kit';
+import GoogleLogin from '../../GoogleLoginButton';
+import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
 
 const TextfieldWithFloatingLabel = MKTextField.textfieldWithFloatingLabel()
   .withPlaceholder('Number...')
@@ -80,7 +82,7 @@ export default class Login extends Component<Props> {
 				</TouchableHighlight>
 
 				<View style={styles.googleSignIn}>
-					{/* <GoogleLogin 
+					<GoogleLogin 
 						onLogin={
 							(result) => {
 								console.log('Google onLogin')
@@ -103,7 +105,7 @@ export default class Login extends Component<Props> {
 								}
 							}
 						}
-					/> */}
+					/>
 				</View>
 
 			</View>
