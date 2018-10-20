@@ -5,14 +5,18 @@ import Login from './src/components/Login';
 import Register from './src/components/Register';
 import ParkingCards from './src/components/ParkingCards';
 import Splash from './src/components/Splash';
+import QRComponent from './src/components/QRComponent';
+
 
 import {createStackNavigator} from 'react-navigation';
 
 const AppNavigator = createStackNavigator({
 	Login: {screen: Login},
 	Home: { screen: Home},
-	Register: { screen: Register},
-	ParkingCards: {screen: ParkingCards},
+	// Register: { screen: Register},
+	// ParkingCards: {screen: ParkingCards},
+	QRComponent: {screen: QRComponent},
+
 	// Splash: {screen: Splash},
 	},
 	{

@@ -56,13 +56,15 @@ export default class Home extends Component {
 		Alert.alert("hoow");
 	}
 
-	parkCar = () => {
-		Alert.alert("wooh");
+	parkCar = (x) => {
+		//Alert.alert("wooh");
+		this.props.navigation.navigate('QRComponent', x);
 	}
 
-	parkBike = () => {
-		Alert.alert("yooh");
-	}
+	
+	// parkBike = () => {
+	// 	Alert.alert("yooh");
+	// }
 
 	history = () => {
 		Alert.alert("oo yeaa");
@@ -108,14 +110,15 @@ export default class Home extends Component {
 									justifyContent: 'space-evenly'}]}>
 							<CustButton
 								//buttonStyle={styles.buttonStyle}
-								onPress={this.parkCar}
-								title="Park your Car"
+								onPress={() => this.parkCar({email: email})}
+								//onPress={() => this.onSignin({name: '<get from db>', email: this.state.email})}
+								title="Park your vehicle"
 							/>
-							<CustButton
+							{/* <CustButton
 								//buttonStyle={styles.buttonStyle}
 								onPress={this.parkBike}
 								title="Park your Bike"
-							/>
+							/> */}
 						</View>
 
 						<View style={styles.buttonContainer}>
