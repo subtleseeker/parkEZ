@@ -128,37 +128,38 @@ export default class Home extends Component {
 		}
 	}
 	
-	const styles = StyleSheet.create({
-		topContainer:{
-			flex: 1,
-			backgroundColor: 'white',
-			alignItems: 'center',
-			justifyContent: 'center',
-			elevation: 1,
-		},
-		bottomContainer:{
-			flex: 2,
-			//backgroundColor: 'blue',
-			alignItems: 'center',
-			justifyContent: 'center',
-		},
-		buttonContainer:{
-			//backgroundColor: 'green',
-			margin: 15,
-			padding: 5,
-			//marginHorizontal: 15,
-			//width: '50%',
-		},
-		buttonStyle: {
-			borderRadius:5,
-			backgroundColor: '#3366cc',
-			// width: 300,
-			// height: 45,
-			// borderColor: "transparent",
-			// borderWidth: 0,
-		},
-		buttonTitle:{
-			//fontWeight: "100",
-			fontFamily: 'NotoSerif-Bold',
-		}
-	})
+const styles = StyleSheet.create({
+	topContainer:{
+		flex: 1,
+		backgroundColor: 'white',
+		alignItems: 'center',
+		justifyContent: 'center',
+		elevation: 1,
+	},
+	bottomContainer:{
+		flex: 2,
+		//backgroundColor: 'blue',
+		alignItems: 'center',
+		justifyContent: 'center',
+	},
+	buttonContainer:{
+		//backgroundColor: 'green',
+		margin: 15,
+		padding: 5,
+		//marginHorizontal: 15,
+		//width: '50%',
+	},
+	buttonStyle: {
+		borderRadius:5,
+		backgroundColor: '#3366cc',
+		// width: 300,
+		// height: 45,
+		// borderColor: "transparent",
+		// borderWidth: 0,
+	},
+	buttonTitle:{
+		//fontWeight: "100",
+		fontFamily: 'NotoSerif-Bold',
+	}
+})
+
