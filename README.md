@@ -13,4 +13,3 @@ Technologies used:
 - Express.js and Node for creating the API endpoints for the app 
 - Arduino to fetch data from ultrasonic sensors for smart parking 
 - NodeMCU with Adafruit API to interface the data coming from Arduino, and sending/receiving queries from the server  
-- Stripe to handle billing related activities (simple credit card based payment) 
