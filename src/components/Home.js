@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, Alert, TextInput, Image, TouchableHighlight, Platform, StyleSheet} from 'react-native';
+import {View, Text, Alert, TextInput, Image, ImageBackground, TouchableHighlight, Platform, StyleSheet} from 'react-native';
 import {createStackNavigator} from 'react-navigation';
 import { Button, Icon } from 'react-native-elements';
 import BottomNavigation, { FullTab } from 'react-native-material-bottom-navigation';
@@ -18,7 +18,7 @@ export default class Home extends Component {
 		  key: 'games',
 		  //icon: 'gamepad-variant',
 		  label: 'Home',
-		  barColor: '#388E3C',
+		  barColor: '#FFFFFF',
 		  pressColor: 'rgba(255, 255, 255, 0.16)'
 		},
 		{
@@ -77,46 +77,59 @@ export default class Home extends Component {
 		return (
 			//Alert.alert(name+":"+email),
 			<View style={{flex:1}}>
-				<View style={styles.topContainer}>
-					<View style={[styles.buttonContainer, {width: '50%'}]}>
-						<CustButton 
-							//buttonStyle={styles.buttonStyle}
-							onPress={this.linkWallet}
-							title="Link wallet"
-						/>
+				<ImageBackground
+				style={{
+					// backgroundColor: '#ccc',
+					flex: 1,
+					// resizeMode:'cover',
+					// position: 'absolute',
+					width: '100%',
+					height: '100%',
+					// justifyContent: 'center',
+				  }}
+				  imageStyle={{resizeMode: 'repeat'}}
+				  source={require('../images/bg.png')}
+		  		>
+					<View style={styles.topContainer}>
+						<View style={[styles.buttonContainer, {width: '50%'}]}>
+							<CustButton 
+								//buttonStyle={styles.buttonStyle}
+								onPress={this.linkWallet}
+								title="Link wallet"
+							/>
+						</View>
 					</View>
-				</View>
-				
-				<View  style={styles.bottomContainer}>
-					<View 
-						style={[styles.buttonContainer,
-								{flexDirection: 'row',
-								width: '100%',
-								justifyContent: 'space-evenly'}]}>
-						<CustButton
-							//buttonStyle={styles.buttonStyle}
-							onPress={this.parkCar}
-							title="Park your Car"
-						/>
-						<CustButton
-							//buttonStyle={styles.buttonStyle}
-							onPress={this.parkBike}
-							title="Park your Bike"
-						/>
-					</View>
+					
+					<View  style={styles.bottomContainer}>
+						<View 
+							style={[styles.buttonContainer,
+									{flexDirection: 'row',
+									width: '100%',
+									justifyContent: 'space-evenly'}]}>
+							<CustButton
+								//buttonStyle={styles.buttonStyle}
+								onPress={this.parkCar}
+								title="Park your Car"
+							/>
+							<CustButton
+								//buttonStyle={styles.buttonStyle}
+								onPress={this.parkBike}
+								title="Park your Bike"
+							/>
+						</View>
 
-					<View style={styles.buttonContainer}>
-						<CustButton
-							title="Parking History"
-							//borderRadius='15'
-							//buttonStyle={styles.buttonStyle}
-							onPress={this.history}
-							//titleStyle={styles.buttonTitle}
-						/>
+						<View style={styles.buttonContainer}>
+							<CustButton
+								title="Parking History"
+								//borderRadius='15'
+								//buttonStyle={styles.buttonStyle}
+								onPress={this.history}
+								//titleStyle={styles.buttonTitle}
+							/>
+						</View>
+								{/* <Text style={{fontFamily:'Charmonman-Regular'}}>blabla albla</Text> */}
 					</View>
-							{/* <Text style={{fontFamily:'Charmonman-Regular'}}>blabla albla</Text> */}
-				</View>
-				
+				</ImageBackground>
 				<BottomNavigation
 					onTabPress={newTab => this.setState({ activeTab: newTab.key })}
 					renderTab={this.renderTab}
@@ -131,7 +144,7 @@ export default class Home extends Component {
 const styles = StyleSheet.create({
 	topContainer:{
 		flex: 1,
-		backgroundColor: 'white',
+		//backgroundColor: 'white',
 		alignItems: 'center',
 		justifyContent: 'center',
 		elevation: 1,
