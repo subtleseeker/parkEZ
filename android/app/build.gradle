@@ -137,6 +137,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-svg')
     compile project(':react-native-material-kit')
     compile project(':react-native-google-signin')
     implementation fileTree(dir: "libs", include: ["*.jar"])

@@ -16,21 +16,21 @@ export default class Home extends Component {
 	tabs = [
 		{
 		  key: 'games',
-		  icon: 'gamepad-variant',
+		  //icon: 'gamepad-variant',
 		  label: 'Home',
 		  barColor: '#388E3C',
 		  pressColor: 'rgba(255, 255, 255, 0.16)'
 		},
 		{
 		  key: 'movies-tv',
-		  icon: 'movie',
+		  //icon: 'movie',
 		  label: 'Wallet',
 		  barColor: '#B71C1C',
 		  pressColor: 'rgba(255, 255, 255, 0.16)'
 		},
 		{
 		  key: 'music',
-		  icon: 'history',
+		  //icon: 'history',
 		  type: 'font-awesome',
 		  label: 'History',
 		  barColor: '#E64A19',
@@ -75,7 +75,7 @@ export default class Home extends Component {
 		const email = navigation.getParam('email', '');
 
 		return (
-			Alert.alert(name+":"+email),
+			//Alert.alert(name+":"+email),
 			<View style={{flex:1}}>
 				<View style={styles.topContainer}>
 					<View style={[styles.buttonContainer, {width: '50%'}]}>

@@ -8,7 +8,7 @@ import { TextField } from 'react-native-material-textfield';
 
 const CustButton = (props) => <Button 
 							titleStyle={styles.buttonTitle} 
-							buttonStyle={styles.buttonStyle} 
+							buttonStyle={[styles.buttonStyle,{backgroundColor: 'blue', borderRadius: 5}]} 
 							{...props} />;
 
 const TextfieldWithFloatingLabel = mdl.Textfield.textfieldWithFloatingLabel()
