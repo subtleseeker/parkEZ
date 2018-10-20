@@ -1,0 +1,15 @@
+# parkEZ
+
+ParkEZ: Parking made easy 
+
+Automation is the 21st century’s most cliched buzzword. 
+However, most people mistake automation for throwing computing power and resources at solving problems - even when simpler solutions exist. 
+
+A simple solution to eliminate the parking woes this country faces today - an automated parking solution which involves minimal hardware complexity to implement. 
+
+Technologies used: 
+- MongoDB to store parking related information
+- React Native for the user app (iOS and Android both versions are being worked on) 
+- Express.js and Node for creating the API endpoints for the app 
+- Arduino to fetch data from ultrasonic sensors for smart parking 
+- Raspberry Pi to interface the data coming from Arduino, and sending/receiving queries from the server  
