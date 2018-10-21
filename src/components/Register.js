@@ -6,7 +6,7 @@ import t from 'tcomb-form-native'; // 0.6.9
 const Form = t.form.Form;
 
 const User = t.struct({
-  UPI_ID: t.String,
+  Credit_Card: t.String,
   Are_You_Differently_Abled: t.Boolean
 });
 
@@ -74,9 +74,10 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: '35%',
+   // marginTop: '35%',
     padding: 20,
     backgroundColor: '#ffffff',
   },

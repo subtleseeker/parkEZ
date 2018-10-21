@@ -26,7 +26,7 @@ class ParkingCards extends Component {
 
 	componentDidMount() {
 
-		//navigator.geolocation.requestAuthorization();
+		// navigator.geolocation.requestAuthorization();
 
 		navigator.geolocation.getCurrentPosition(
 			(position) => {

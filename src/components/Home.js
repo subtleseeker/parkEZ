@@ -67,7 +67,7 @@ export default class Home extends Component {
 	// }
 
 	history = () => {
-		Alert.alert("oo yeaa");
+		this.props.navigation.navigate('fetch');
 	}
 
 	render() {
@@ -92,7 +92,7 @@ export default class Home extends Component {
 				  imageStyle={{resizeMode: 'repeat'}}
 				  source={require('../images/bg.png')}
 		  		>
-					<View style={styles.topContainer}>
+					{/* <View style={styles.topContainer}>
 						<View style={[styles.buttonContainer, {width: '50%'}]}>
 							<CustButton 
 								//buttonStyle={styles.buttonStyle}
@@ -100,7 +100,7 @@ export default class Home extends Component {
 								title="Link wallet"
 							/>
 						</View>
-					</View>
+					</View> */}
 					
 					<View  style={styles.bottomContainer}>
 						<View 
