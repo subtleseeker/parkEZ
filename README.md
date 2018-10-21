@@ -3,7 +3,7 @@
 ParkEZ: Parking made easy 
 
 Automation is the 21st century’s most cliched buzzword. 
-However, most people mistake automation for throwing computing power and resources at solving problems - int the face of simpler, more intuitive solutions. 
+However, most people mistake automation for throwing computing power and resources at solving problems - in the face of simpler, more intuitive solutions. 
 
 A simple solution to eliminate the parking woes the great country of India faces today - an automated parking solution which involves minimal hardware complexity to implement. 
 

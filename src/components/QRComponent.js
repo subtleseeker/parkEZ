@@ -5,7 +5,7 @@ export default class QRComponent extends Component {
   render() {
 
 	const {navigation} = this.props;
-	const email = navigation.getParam('email', 'sorry:(');
+	const email = navigation.getParam('email', 'sorry');
 
     return (
 		//Alert.alert(email),

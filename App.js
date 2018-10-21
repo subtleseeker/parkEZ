@@ -13,8 +13,8 @@ import {createStackNavigator} from 'react-navigation';
 const AppNavigator = createStackNavigator({
 	Login: {screen: Login},
 	Home: { screen: Home},
-	// Register: { screen: Register},
-	// ParkingCards: {screen: ParkingCards},
+	Register: { screen: Register},
+	ParkingCards: {screen: ParkingCards},
 	QRComponent: {screen: QRComponent},
 
 	// Splash: {screen: Splash},

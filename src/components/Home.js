@@ -58,7 +58,7 @@ export default class Home extends Component {
 
 	parkCar = (x) => {
 		//Alert.alert("wooh");
-		this.props.navigation.navigate('QRComponent', x);
+		this.props.navigation.navigate('ParkingCards', x);
 	}
 
 	
@@ -74,7 +74,7 @@ export default class Home extends Component {
 
 		const {navigation} = this.props;
 		const name = navigation.getParam('name', 'user');
-		const email = navigation.getParam('email', '');
+		const email = navigation.getParam('email', 'sorry:(');
 
 		return (
 			//Alert.alert(name+":"+email),
