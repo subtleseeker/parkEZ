@@ -43,6 +43,7 @@ export default class bkend extends Component {
     // };
 
     render() {
+
         return (
             this.handlePress(),
             // <WebView

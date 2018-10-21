@@ -103,11 +103,10 @@ export default class Home extends Component {
 					</View> */}
 					
 					<View  style={styles.bottomContainer}>
+						
 						<View 
 							style={[styles.buttonContainer,
-									{flexDirection: 'row',
-									width: '100%',
-									justifyContent: 'space-evenly'}]}>
+									]}>
 							<CustButton
 								//buttonStyle={styles.buttonStyle}
 								onPress={() => this.parkCar({email: email})}
@@ -133,11 +132,11 @@ export default class Home extends Component {
 								{/* <Text style={{fontFamily:'Charmonman-Regular'}}>blabla albla</Text> */}
 					</View>
 				</ImageBackground>
-				<BottomNavigation
+				{/* <BottomNavigation
 					onTabPress={newTab => this.setState({ activeTab: newTab.key })}
 					renderTab={this.renderTab}
 					tabs={this.tabs}
-				/>
+				/> */}
 
 			</View>
 			)
@@ -146,35 +145,43 @@ export default class Home extends Component {
 	
 const styles = StyleSheet.create({
 	topContainer:{
-		flex: 1,
+		//flex: 1,
 		//backgroundColor: 'white',
 		alignItems: 'center',
 		justifyContent: 'center',
 		elevation: 1,
 	},
 	bottomContainer:{
-		flex: 2,
+		flex: 1,
 		//backgroundColor: 'blue',
 		alignItems: 'center',
 		justifyContent: 'center',
+		alignContent: 'center',
 	},
 	buttonContainer:{
 		//backgroundColor: 'green',
 		margin: 15,
+		marginBottom:50,
 		padding: 5,
 		//marginHorizontal: 15,
-		//width: '50%',
+		width: '100%',
+		justifyContent: 'center',
+		alignItems: 'center',
+		flexDirection: 'row',
+		justifyContent: 'space-evenly'
 	},
 	buttonStyle: {
-		borderRadius:5,
+		borderRadius:20,
 		backgroundColor: '#3366cc',
-		// width: 300,
+		justifyContent: 'center',
+		width: '90%',
 		// height: 45,
 		// borderColor: "transparent",
 		// borderWidth: 0,
 	},
 	buttonTitle:{
-		//fontWeight: "100",
+		// fontWeight: "300",
+		fontSize: 50,
 		fontFamily: 'NotoSerif-Bold',
 	}
 })

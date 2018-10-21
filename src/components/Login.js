@@ -71,10 +71,10 @@ export default class Login extends Component<Props> {
                 <Image
                         resizeMode='contain'
                         // style={styles.logo}
-                        source={require('../images/logo_park.png')}	
+                        source={require('../images/logo350.png')}	
                 />
 
-                <TextfieldWithFloatingLabel
+                {/* <TextfieldWithFloatingLabel
 					//tintColor={MKColor.Lime}
 					//textInputStyle={{color: MKColor.Orange}}
 					onChangeText={textInputValue => this.setState({email: textInputValue})}
@@ -88,7 +88,7 @@ export default class Login extends Component<Props> {
                     // style={[styles.textInput, {marginTop:10}]}	
                     // style={{marginTop: 10}}
                     secureTextEntry={true}		
-				/>
+				/> */}
 
 				 {/* <TextField style={{}}
 					//tintColor={MKColor.Lime}
@@ -106,12 +106,12 @@ export default class Login extends Component<Props> {
                     secureTextEntry={true}		
 				/> */}
 
-                <View style={styles.buttonContainer}>
+                {/* <View style={styles.buttonContainer}>
 					<CustButton
 						onPress={() => this.onSignin({name: '<get from db>', email: this.state.email})}
 						title="Sign In"
 					/>
-				</View>
+				</View> */}
 
 				{/* <View style={styles.buttonContainer}>
 						<CustButton
@@ -123,12 +123,12 @@ export default class Login extends Component<Props> {
 						/>
 					</View> */}
 
-                <TouchableHighlight 
+                {/* <TouchableHighlight 
 				style={{marginTop: 15, padding: 3}}
 				underlayColor='#F0F0F0'
 				onPress={this.onRegister}>
 					<Text style={{ color: 'darkblue'}}>REGISTER</Text>
-				</TouchableHighlight>
+				</TouchableHighlight> */}
 
 				<View style={styles.googleSignIn}>
 					<GoogleLogin 
@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
 		marginTop: 20,
 	},
 	googleSignIn:{
-		marginTop: 50,
+		marginTop: 100,
 		padding: 5,
 		// backgroundColor: 'blue',
 	},
