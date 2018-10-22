@@ -15,28 +15,36 @@ export default class bkend extends Component {
     }
 
     handlePress = async () => {
-        
+
         fetch('https://io.adafruit.com/api/v2/Octobass/feeds', {
-            //url: 'https://io.adafruit.com/api/v2/Octobass/feeds',
             headers: {
                 "X-AIO-Key": "0cf2d5dbd70f4dc0bda7a4fed536052a",
                 'Content-Type': 'application/json'
                 }
-        }).then((response) => response.json())
-        .then((responseJson) => {
+        }).then((response) => {
+            if(response.ok) {
+                return response.json();
+            } else{
+                Alert("booooooo!");
+                return Promise.reject();
+                console.error("Errrrrror...disconnected");
+                this.handlePress();
+                
+                //throw new Error('Something went wrong!');
+            }
+        }).then((responseJson) => {
             //Alert.alert('yeyeyeyeyeyeyeyeyeyeyeyeyyeye');
             console.log("yeyeye"+JSON.stringify(responseJson));
-        this.setState({
-            slot0: responseJson[0].last_value,
-            slot1: responseJson[1].last_value,
-            slot2: responseJson[2].last_value,
-            slot3: responseJson[3].last_value,
-        }); 
-    
+            this.setState({
+                slot0: responseJson[0].last_value,
+                slot1: responseJson[1].last_value,
+                slot2: responseJson[2].last_value,
+                slot3: responseJson[3].last_value,
+            }); 
         }).catch((error) => {
         console.error(error);
         });
-    }
+    } 
 
     // state = {
     //     url: 'https://io.adafruit.com/api/v2/Octobass/feeds',

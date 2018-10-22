@@ -23,18 +23,18 @@ export default class QRComponent extends Component {
 		//Alert.alert(email),
       	<View style={styles.topContainer}>
 
-			<Image 
-			source={{ uri: "http://api.qrserver.com/v1/create-qr-code/?data="+email+"&size=250x250"}}
-			style = {{flex:0.5}}
-			>
-			</Image>
-			
-			<View style={{marginTop: 30,color:'#3366cc'}}>
-				<CustButton
-							onPress={this.onPs} //{name: '<get from db>', email: this.state.email}
-							title="Open Slots"
-						/>
-			</View>
+				<Image 
+				source={{ uri: "http://api.qrserver.com/v1/create-qr-code/?data="+email+"&size=250x250"}}
+				style = {{flex:0.58}}
+				>
+				</Image>
+				
+				<View style={{marginTop: 30,color:'#3366cc'}}>
+					<CustButton
+								onPress={this.onPs} //{name: '<get from db>', email: this.state.email}
+								title="Open Slots"
+							/>
+				</View>
 
 		</View>
     );
